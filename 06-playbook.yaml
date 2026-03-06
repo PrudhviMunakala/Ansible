@@ -1,11 +1,9 @@
 - name: play level variables
   hosts: local
   connection: local
-  vars_file:
-    - vars.yaml
+  vars_files:
+  - vars.yaml
   tasks:
-    - name: print the variables
-      vars:
-        COURSE: "DEVOPS WITH AZURE"
-      ansible.builtin.debug:
-        msg: "i have enrolled in {{ COURSE}} course, and my trainer name is {{ TRAINER}} course duration is {{ DURATION}} "
+  - name: print the variables
+    ansible.builtin.debug:
+      msg: "i have enrolled in {{ COURSE }} course, and my trainer name is {{ TRAINER }} course duration is {{ DURATION }} "
