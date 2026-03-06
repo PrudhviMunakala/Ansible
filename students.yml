@@ -1,0 +1,9 @@
+- name: "students-details"
+  student: "prudhvi teja"
+  course: "AWS"
+  batch: "88S"
+  Address:
+  - city: "hyderabad"
+    moblie: 8897009692
+    payment: "done"
+    
