@@ -1,6 +1,6 @@
 - name: play level variables
   hosts: local
-  connection: localhost
+  connection: local
   vars:
     COURSE: "DEVOPS WITH AWS"
     TRAINER: "SIVA KUMAR"
