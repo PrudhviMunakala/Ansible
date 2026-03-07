@@ -1,0 +1,8 @@
+- name: data types in ansible
+  hosts: local
+  connection: local
+  tasks:
+    - name: print the data types in screen
+      ansible.builtin.debug:
+        msg: "yes package manager is RedHat family"
+      when: ansible_facts == "RedHat"
