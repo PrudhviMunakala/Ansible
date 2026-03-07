@@ -17,7 +17,6 @@
       ansible.builtin.debug:
         msg: |
           course is {{ PROGRAM }}
-           {{ TRAINER }}\n
              {{ LAUNGUAGE }}\n
              {{ IS_LIVE }}\n
               {{ DETAILS }}\n
