@@ -17,7 +17,7 @@
         msg: "{{ tagslist | dict2items }}"
     - name: convert to upper and lower
       ansible.builtin.debug:
-        msg: "{{ COURSE | uppe }}"
+        msg: "{{ COURSE | upper }}"
     - name: conveert to upper and lower
       ansible.builtin.debug:
         msg: "{{ COURSE | lower }}"
