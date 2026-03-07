@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NAME: "DevOps with AWS"
+    PROGRAM: "DEVSECOPS WITH AWS"
     DURATION: 20
     IS_LIVE: true
     DETAILS:
@@ -16,7 +16,7 @@
       - name: print the data types in screen
     ansible.builtin.debug:
       msg: |
-        course is {{ NAME }}\n
+        course is {{ PROGRAM }}
         {{ TRAINER }}\n
         {{ LAUNGUAGE }}\n
         {{ IS_LIVE }}\n
