@@ -1,0 +1,17 @@
+- name: data types in ansible
+  hosts: local
+  connection: local
+  tasks:
+    - name: checking user exist or not
+      ansible.builtin.command: id roboshop
+      register: user_output
+      ignore_errors: true
+
+    - name: print the output.txt
+      ansible.builtin.debug:
+        msg: "{{ user_output }}"
+
+    - name: create a user
+      ansible.builtin.command: useradd roboshop
+      when: user_output.rc != 0
+      
