@@ -1,0 +1,24 @@
+- name: data types in ansible
+  hosts: local
+  connection: local
+  vars:
+    NAME: "DevOps with AWS"
+    DURATION: 20
+    IS_LIVE: true
+    DETAILS:
+    TRAINER: "Siva Kumar"
+    LAUNGUAGE: "Telugu"
+    TOPICS:
+      - LINUX
+      - AWS
+      - DOCKER
+    tasks:
+      - name: print the data types in screen
+    ansible.builtin.debug:
+      msg: |
+        course is {{ NAME }}\n
+        {{ TRAINER }}\n
+        {{ LAUNGUAGE }}\n
+        {{ IS_LIVE }}\n
+        {{ DETAILS }}\n
+        {{ TOPICS }}
