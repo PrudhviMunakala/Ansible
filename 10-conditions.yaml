@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-    IS_LIVE: true
+    IS_LIVE: false
   tasks:
     - name: print the data types in screen
       ansible.builtin.debug:
-        msg: "yes the class is libe class"
+        msg: "yes the class is liveclass"
       when: IS_LIVE
