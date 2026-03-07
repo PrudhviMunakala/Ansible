@@ -6,19 +6,19 @@
     DURATION: 20
     IS_LIVE: true
     DETAILS:
-    TRAINER: "Siva Kumar"
-    LAUNGUAGE: "Telugu"
+      TRAINER: "Siva Kumar"
+      LAUNGUAGE: "Telugu"
     TOPICS:
       - LINUX
       - AWS
       - DOCKER
-    tasks:
-      - name: print the data types in screen
-    ansible.builtin.debug:
-      msg: |
-        course is {{ PROGRAM }}
-        {{ TRAINER }}\n
-        {{ LAUNGUAGE }}\n
-        {{ IS_LIVE }}\n
-        {{ DETAILS }}\n
-        {{ TOPICS }}
+  tasks:
+    - name: print the data types in screen
+      ansible.builtin.debug:
+        msg: |
+          course is {{ PROGRAM }}
+           {{ TRAINER }}\n
+             {{ LAUNGUAGE }}\n
+             {{ IS_LIVE }}\n
+              {{ DETAILS }}\n
+              {{ TOPICS }}
