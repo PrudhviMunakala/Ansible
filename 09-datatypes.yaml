@@ -16,8 +16,7 @@
     - name: print the data types in screen
       ansible.builtin.debug:
         msg: |
-          course is {{ PROGRAM }}
-             {{ LAUNGUAGE }}\n
-             {{ IS_LIVE }}\n
-              {{ DETAILS }}\n
-              {{ TOPICS }}
+          {{ PROGRAM }}
+            {{ IS_LIVE }}\n
+             {{ DETAILS }}\n
+             {{ TOPICS }}
