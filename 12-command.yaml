@@ -7,3 +7,4 @@
 
     - name: print using the shell
       ansible.builtin.shell: ls -ltr > output.txt
+      register: ansible_output
