@@ -1,0 +1,9 @@
+- name: data types in ansible
+  hosts: local
+  connection: local
+  tasks:
+    - name: print the data types in screen
+      ansible.builtin.command: ls -ltr
+
+    - name: print using the shell
+      ansible.builtin.shell: ls -ltr > output.txt
